@@ -1,0 +1,24 @@
+{
+  "name": "00-references",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-esm"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "events": "^3.3.0",
+    "http": "^0.0.1-security",
+    "os": "^0.1.2",
+    "typescript": "^4.9.3"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^18.11.9",
+    "ts-node": "^10.9.1"
+  }
+}

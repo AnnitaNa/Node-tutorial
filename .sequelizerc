@@ -1,0 +1,13 @@
+const path = require("path")
+
+
+const config = {
+    config: path.join(__dirname, './15-pg/src/config/config.js'),
+    'models-path': path.join(__dirname, './15-pg/src/models'),
+    'migrations-path': path.join(__dirname, './15-pg/src/migrations'),
+    'seeders-path': path.join(__dirname, './15-pg/src/seeders')
+}
+
+module.exports = config
+
+// I need this file if my files are not on the default folders
