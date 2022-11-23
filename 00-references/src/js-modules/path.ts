@@ -1,4 +1,4 @@
-import path from 'path'
+import path from "path";
 import { fileURLToPath } from "url";
 
 // absolute path to the current file
@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url); //! __filename
 console.log(__filename);
 
 // parses a string path into as object
-let pathObject = path.parse(__filename); //! parse(#)
+const pathObject = path.parse(__filename); //! parse(#)
 console.log(pathObject);
 
 // absolute path to the parent folder     // * ATTENTION: this gives the path of *working* directory -> not the directory the file is in!

@@ -1,23 +1,23 @@
 const urls = new URL(
-    " https://user:password@sub.example.com:8080/p/a/t/h?query=string#hash"
+	" https://user:password@sub.example.com:8080/p/a/t/h?query=string#hash"
 );
 
 function urlStructures(url: URL) {
-    return {
-        Serialized: {
-            HREF: url.href,
-            TOSTRING: url.toString(),
-        },
-        PROTOCOL: url.protocol,
-        USERNAME: url.username,
-        PASSWORD: url.password,
-        HOST: url.host,
-        HOSTNAME: url.hostname,
-        PORT: url.port,
-        PATHNAME: url.pathname,
-        SEARCH: url.search,
-        HASH: url.hash,
-    };
+	return {
+		Serialized: {
+			HREF: url.href,
+			TOSTRING: url.toString(),
+		},
+		PROTOCOL: url.protocol,
+		USERNAME: url.username,
+		PASSWORD: url.password,
+		HOST: url.host,
+		HOSTNAME: url.hostname,
+		PORT: url.port,
+		PATHNAME: url.pathname,
+		SEARCH: url.search,
+		HASH: url.hash,
+	};
 }
 
 console.log(urlStructures(urls));
@@ -35,5 +35,5 @@ console.log(`using get('query'): ${urlQuery.get("query")}`);
 
 //Loop through params
 urlQuery.forEach((val, key) => {
-    console.log(`${key}: ${val}`);
+	console.log(`${key}: ${val}`);
 });

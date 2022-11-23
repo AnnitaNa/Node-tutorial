@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node-esm"
+    "start": "ts-node-esm",
+    "lint": "eslint ./src/** ",
+    "lint:fix": "eslint  --ext .js,.ts  --fix"
   },
   "type": "module",
   "author": "",
@@ -19,6 +21,9 @@
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
     "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint": "^8.28.0",
     "ts-node": "^10.9.1"
   }
 }

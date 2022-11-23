@@ -23,6 +23,7 @@ const middleware2 = (req: Request, res: Response, next: NextFunction) => {
 
 //! 1) app.use()
 
+// ex.: localhost:3000/app
 //It will share info with all methods that use this route or its childs (/app/a/b/c)
 app.use('/app', (req: Request, res: Response, next: NextFunction) => {
     req.query.using = 'I am using app.use()'
@@ -37,13 +38,14 @@ app.get('/app', (req: Request, res: Response) => {
 
 //! 2) In the middle of the request
 
+// ex.: localhost:3000/
 app.get('/', middleware1, (req: Request,res: Response) => {
     console.log(req.query);
     res.send('I changed info with the middleware')
 })
 
 
-
+// ex.: localhost:3000/endpoint
 //! 3) series of requests with same endpoint
 app.get('/endpoint', (req: Request, res: Response, next: NextFunction) => {
     req.query.middleware1 = 'executed'

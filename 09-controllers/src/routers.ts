@@ -1,6 +1,6 @@
-import express, {Router} from 'express'
+import express, {Router} from "express";
 
-import {getAll, getById, create, update, deleteById, readAndParse} from './controllers.js'
+import {getAll, getById, create, update, deleteById, readAndParse} from "./controllers.js";
 
 export const router: Router = express.Router();
 
@@ -10,11 +10,11 @@ router.use(express.json());
 router.use(express.urlencoded({extended: true})); 
 
 
-router.get('/', getAll)
-router.get('/:id', getById)
-router.post('/', create)
-router.put('/:id', update)
-router.delete('/:id', deleteById)
+router.get("/", getAll);
+router.get("/:id", getById);
+router.post("/", create);
+router.put("/:id", update);
+router.delete("/:id", deleteById);
 
 //OR
 

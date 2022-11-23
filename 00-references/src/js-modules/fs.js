@@ -17,14 +17,14 @@ const data = "writing/";
 //------------ 1) creates folder
 
 async function createFolder() {
-    //! async function with promises and try/catch
-    try {
-        await fs.promises
-            .mkdir(path.join(__dirname, folderName))
-            .then(console.log("folder created"));
-    } catch (err) {
-        throw err;
-    }
+	//! async function with promises and try/catch
+	try {
+		await fs.promises
+			.mkdir(path.join(__dirname, folderName))
+			.then(console.log("folder created"));
+	} catch (err) {
+		throw err;
+	}
 }
 createFolder();
 
@@ -44,7 +44,7 @@ console.log(readFileAsync);
 
 const stream = fs.createReadStream(filePath, "utf-8"); //!-- stream
 for await (let chunk of stream) {
-    console.log(`I am reading chunk ${chunk}`);
+	console.log(`I am reading chunk ${chunk}`);
 }
 // ------------- 4) delete file and folder
 
