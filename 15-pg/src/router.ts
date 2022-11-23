@@ -9,7 +9,7 @@ router.use(express.json());
 router.use(express.urlencoded({extended: true})); 
 
 router.get("/", userController.getAll);
-// router.get("/:id", userController.getById);
-// router.post("/", userController.create);
-// router.put("/:id", userController.update);
-// router.delete("/:id", userController.remove);
+router.get("/:id", userController.getById);
+router.post("/", userController.create);
+router.put("/:id", userController.update);
+router.delete("/:id", userController.remove);

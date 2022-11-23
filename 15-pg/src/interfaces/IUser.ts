@@ -10,5 +10,5 @@ export interface IUser {
     updated_at?: Date
 }
 
-export interface IUserInput extends Optional<IUser, 'id'>{}
-export interface IUserOutput extends Required<IUser>{}
+export type IUserInput = Optional<IUser, "id">
+export type IUserOutput = Required<IUser>

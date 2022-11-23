@@ -19,7 +19,7 @@ User.init(
 	{
 		// Model attributes are defined here
 		id: {
-			type: DataTypes.INTEGER.UNSIGNED,
+			type: DataTypes.INTEGER,
 			autoIncrement: true,
 			primaryKey: true,
 		},
